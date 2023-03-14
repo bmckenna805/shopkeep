@@ -1,11 +1,5 @@
 import tkinter as tk
-import yaml
-
-
-# Create a function for writing values off to a yaml file
-def write(dictionary):
-    with open('data.yml', 'w') as outfile:
-        yaml.dump(dictionary, outfile, sort_keys=False)
+from utils import utils
 
 
 # Create a function to format the dictionary properly
@@ -18,23 +12,29 @@ def form(name, description, hp):
     return data
 
 
-# Create a function to saving the entry to file
 def save():
+    # get the values from form
     name = name_entry.get()
     description = description_entry.get()
     hp = hp_entry.get()
+
+    # dict prep and file location
     dictionary = form(name, description, hp)
-    write(dictionary)
+    path = f'data/{name}.yml'
+
+    # write out and update status label
+    utils.write(dictionary, path)
     status_label["text"] = "Saved"
 
 
-# Create a function to saving the entry to file
 def clear():
+    # Clear form fields
     name_entry.delete(0, tk.END)
     description_entry.delete(0, tk.END)
     hp_entry.delete(0, tk.END)
-    status_label["text"] = "Cleared"
 
+    # update status label
+    status_label["text"] = "Cleared"
 
 if __name__ == "__main__":
 
