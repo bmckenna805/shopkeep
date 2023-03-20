@@ -1,0 +1,9 @@
+name: slime
+description: A gelatinous ball of evil seeps up from the ground
+hp: '5'
+xp: '2'
+location: grasslands
+power: '1'
+attack1: It goops you
+attack2: It stares at you, you think
+attack3: It licks your boot
