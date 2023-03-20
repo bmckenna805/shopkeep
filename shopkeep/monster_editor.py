@@ -61,6 +61,7 @@ def clear():
     # update status label
     status_label["text"] = "Cleared"
 
+
 if __name__ == "__main__":
 
     # Create a Tkinter window
