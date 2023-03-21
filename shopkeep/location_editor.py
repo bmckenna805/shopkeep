@@ -67,15 +67,15 @@ if __name__ == "__main__":
     description_entry = tk.Entry()
 
     # Create flavor1 label and entry
-    flavor1_label = tk.Label(text="attack flavor text 1")
+    flavor1_label = tk.Label(text="location flavor text 1")
     flavor1_entry = tk.Entry()
 
     # Create flavor2 label and entry
-    flavor2_label = tk.Label(text="attack flavor text 2")
+    flavor2_label = tk.Label(text="location flavor text 2")
     flavor2_entry = tk.Entry()
 
     # Create flavor3 label and entry
-    flavor3_label = tk.Label(text="attack flavor text 3")
+    flavor3_label = tk.Label(text="location flavor text 3")
     flavor3_entry = tk.Entry()
 
     # Create the buttons
